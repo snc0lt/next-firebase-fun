@@ -41,7 +41,8 @@ export default css`
     width: 100%;
     position: relative;
     overflow: auto;
-    
+    display: flex;
+    flex-direction: column;
   }
   @media (min-width: ${breakpoints.mobile}) {
     main {
