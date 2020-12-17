@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from "next/router";
 import Head from 'next/head'
-import AppLayout from '../components/AppLayout'
 import Button from '../components/Button'
 import GitHub from '../components/Icons/GitHub'
 import { loginWithGitHub, onAuthStateChanged } from '../firebase/client'
@@ -34,8 +33,6 @@ export default function Home() {
         <title>devter 🐦</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <AppLayout>
         <section>
           <img src='/devter-logo.png' alt='Logo' />
           <h1>Devter</h1>
@@ -55,7 +52,6 @@ export default function Home() {
           </div>
           
         </section>
-      </AppLayout>
 
       <style jsx>{`
         img {
