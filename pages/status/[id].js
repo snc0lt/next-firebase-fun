@@ -1,11 +1,11 @@
 import Devit from "components/Devit";
 // import { firestore } from "firebase/admin";
-// import { useRouter } from "next/router";
+import { useRouter } from "next/router";
 
 export default function DevitPage(props) {
-  // const router = useRouter()
+  const router = useRouter()
 
-  // if (router.isFallback) return <h1>Cargando...</h1>
+  if (router.isFallback) return <h1>Cargando...</h1>
   return (
     <>
       <Devit {...props} />
